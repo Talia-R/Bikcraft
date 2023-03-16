@@ -5,21 +5,57 @@
 .header {
   display: flex;
   gap: 1.5rem;
-  /* justify-content: space-between;
-  align-items: center; */
+  justify-content: space-between;
+  align-items: center;
   flex-wrap: wrap;
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
 
-[id="navegacao-primaria"] {
+.navegacao-primaria {
   display: flex;
   gap: 1.5rem;
 }
 
-[id="navegacao-primaria"] a {
-  background-color: var(--c11);
+.navegacao-primaria a {
+  display: inline-block;
   border-radius: 0.3125rem;
   color: var(--c0);
-  padding: 0.5rem;
+  position: relative;
+}
+
+.navegacao-primaria a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: var(--c0);
+  position: absolute;
+  transition: 0.2s ease-out;
+  left: 0;
+}
+
+.navegacao-primaria a:hover::after {
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  .navegacao-primaria a::after {
+    display: none;
+  }
+  .navegacao-primaria a {
+    background-color: var(--c11);
+    padding: 0.5rem;
+  }
+  .navegacao-primaria a:hover {
+    background-color: var(--c10);
+  }
+}
+
+@media (max-width: 370px) {
+  .navegacao-primaria {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem 1rem;
+  }
 }
