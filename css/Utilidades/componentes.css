@@ -27,6 +27,12 @@
   background: linear-gradient(#ffb60d, #e59317);
 }
 
+h1::after,
+h2::after {
+  content: ".";
+  color: var(--p1);
+}
+
 @media (max-width: 500px) {
   .botao {
     font-size: 0.875rem;

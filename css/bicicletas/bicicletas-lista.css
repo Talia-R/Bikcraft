@@ -7,11 +7,6 @@
   margin-bottom: 2.5rem;
 }
 
-.bicicletas-lista h2::after {
-  content: ".";
-  color: var(--p1);
-}
-
 .bicicletas-lista-itens {
   display: flex;
   gap: 2rem;

@@ -10,6 +10,7 @@
 /* ====== home ======  */
 @import url(./css/home/introducao.css);
 @import url(./css/home/tecnologia.css);
+@import url(./css/home/parceiros.css);
 
 /* ====== bibicletas ======  */
 @import url(./css/bicicletas/bicicletas-lista.css);
