@@ -14,7 +14,7 @@
 
 .navegacao-primaria {
   display: flex;
-  gap: 1.5rem;
+  gap: 2.5rem;
 }
 
 .navegacao-primaria a {
@@ -40,6 +40,9 @@
 }
 
 @media (max-width: 600px) {
+  .navegacao-primaria {
+    gap: 1.5rem;
+  }
   .navegacao-primaria a::after {
     display: none;
   }
@@ -52,7 +55,7 @@
   }
 }
 
-@media (max-width: 370px) {
+@media (max-width: 400px) {
   .navegacao-primaria {
     justify-content: center;
     flex-wrap: wrap;

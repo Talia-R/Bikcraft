@@ -1,0 +1,127 @@
+.tecnologia-bg {
+  background-color: var(--c12);
+  box-shadow: inset 0 120px var(--c0), inset 0 -120px var(--c0);
+}
+
+.tecnologia-conteudo {
+  align-self: center;
+}
+
+.tecnologia-conteudo h2 {
+  margin-top: 0.625rem;
+  margin-bottom: 2rem;
+}
+
+.tecnologia-conteudo a {
+  font: 600 1.5rem / 1.5 var(--tg1);
+  color: var(--p1);
+  display: inline-block;
+  margin-top: 0.625rem;
+  margin-bottom: 5rem;
+  position: relative;
+}
+.tecnologia-conteudo a::after {
+  content: "";
+  display: block;
+  background-color: var(--p1);
+  width: 100%;
+  height: 2px;
+  position: absolute;
+}
+
+.tecnologia-conteudo a:hover {
+  color: #e59317;
+}
+
+.tecnologia-conteudo a:hover::after {
+  background-color: #e59317;
+}
+
+.tecnologia-conteudo h3 {
+  font-weight: 500;
+}
+
+.tecnologia-especificacoes h3::before {
+  content: "";
+  display: block;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.tecnologia-especificacoes-motor h3::before {
+  background: url(/assets/icones/eletrica-home.svg);
+}
+
+.tecnologia-especificacoes-rastreador h3::before {
+  background: url(/assets/icones/rastreador-home.svg);
+}
+
+.tecnologia-especificacoes {
+  display: flex;
+  gap: 2rem;
+}
+
+.tecnologia-especificacoes p {
+  padding-top: 0.5rem;
+  max-width: 25ch;
+}
+
+.tecnologia-imagem img {
+  object-position: left;
+  border-radius: 0;
+}
+.tecnologia-imagem img + img {
+  display: none;
+}
+
+@media (max-width: 900px) {
+}
+
+@media (max-width: 800px) {
+  .tecnologia-bg {
+    box-shadow: inset 0 0px var(--c0), inset 0 -120px var(--c0);
+  }
+
+  .tecnologia {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding-top: 2rem;
+  }
+  .tecnologia-imagem img:first-child {
+    display: none;
+  }
+  .tecnologia-imagem img + img {
+    display: inline-block;
+    max-height: 300px;
+    object-position: center;
+  }
+
+  .tecnologia-conteudo a {
+    margin-bottom: 2.5rem;
+  }
+  .tecnologia-especificacoes {
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .tecnologia-especificacoes p {
+    padding-top: 0.5rem;
+    max-width: 55ch;
+  }
+}
+
+@media (max-width: 500px) {
+  .tecnologia {
+    padding-bottom: 2rem;
+  }
+  .tecnologia-bg {
+    box-shadow: unset;
+  }
+  .tecnologia-conteudo a {
+    font-size: 0.875rem;
+  }
+  .tecnologia-imagem {
+    display: none;
+  }
+}
