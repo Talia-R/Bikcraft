@@ -19,7 +19,8 @@ p,
 a,
 ul,
 li,
-span {
+span,
+blockquote {
   margin: 0;
   padding: 0;
 }
@@ -38,12 +39,12 @@ img {
   display: block;
   max-width: 100%;
   max-height: auto;
-  object-fit: cover;
-  object-position: left center;
 }
 
 img[src$=".jpg"] {
   border-radius: 0.3125rem;
+  object-fit: cover;
+  object-position: left center;
 }
 
 span {

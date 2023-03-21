@@ -1,0 +1,95 @@
+.depoimento-bg {
+  background-color: var(--p1);
+}
+
+.depoimento {
+  max-width: 1400px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.depoimento-conteudo {
+  padding: 2rem 2rem 2rem 0;
+  align-self: self-end;
+}
+
+.depoimento-conteudo p {
+  font: 2.25rem/1.33 "Merriweather", serif, "Poppins";
+  position: relative;
+}
+
+.depoimento-conteudo p::before,
+.depoimento-conteudo p::after {
+  content: "";
+  color: var(--p2);
+  font-size: 5rem;
+  position: absolute;
+}
+
+.depoimento-conteudo p::before {
+  content: "“";
+  left: -3rem;
+  top: -2rem;
+}
+
+.depoimento-conteudo p::after {
+  content: "”";
+}
+
+.depoimento-conteudo p {
+  max-width: 32ch;
+  margin-bottom: 2rem;
+}
+
+.depoimento-imagem img {
+  border-radius: 0;
+  min-width: 390px;
+}
+
+@media (max-width: 1000px) {
+  .depoimento-imagem img {
+    object-position: center;
+  }
+}
+
+@media (max-width: 800px) {
+  .depoimento {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .depoimento-conteudo {
+    padding-left: 2rem;
+    text-align: center;
+    justify-self: center;
+  }
+  .depoimento-conteudo p {
+    font-size: 1.5rem;
+  }
+  .depoimento-conteudo p::before,
+  .depoimento-conteudo p::after {
+    font-size: 2.5rem;
+  }
+  .depoimento-conteudo p::before {
+    content: "“";
+    left: -1.5rem;
+    top: -0.5rem;
+  }
+  .depoimento-conteudo p {
+    margin-bottom: 0.5rem;
+  }
+  .depoimento-imagem img {
+    height: 340px;
+  }
+}
+
+@media (max-width: 500px) {
+  .depoimento-imagem {
+    display: none;
+  }
+  .depoimento-conteudo p {
+    font-size: 1rem;
+  }
+  .depoimento-conteudo span {
+    font-size: 0.875rem;
+  }
+}
