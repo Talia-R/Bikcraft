@@ -36,7 +36,7 @@
   font-size: 1.5rem;
   font-weight: 500;
   line-height: 1.5;
-  letter-spacing: 1.5%;
+  letter-spacing: 0.015rem;
   text-transform: uppercase;
 }
 
@@ -55,7 +55,7 @@
 }
 
 .font-2-m {
-  font-family: var(--tg1);
+  font-family: var(--tg2);
   font-size: 1.125rem;
   font-weight: 500;
   line-height: 1.33;

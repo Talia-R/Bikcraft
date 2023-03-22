@@ -7,6 +7,7 @@
 @import url(./css/utilidades/cores.css);
 @import url(./css/utilidades/tipografia.css);
 @import url(./css/utilidades/nav.css);
+@import url(./css/utilidades/footer.css);
 
 /* ====== home ======  */
 @import url(./css/home/introducao.css);
@@ -16,3 +17,6 @@
 
 /* ====== bibicletas ======  */
 @import url(./css/bicicletas/bicicletas-lista.css);
+
+/* ====== seguros ======  */
+@import url(./css/seguros/seguros.css);
