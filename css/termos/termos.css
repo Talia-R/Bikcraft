@@ -1,0 +1,65 @@
+.termos-bg {
+  background-color: var(--c11);
+}
+
+.termos h2::after {
+  content: "";
+}
+
+.termos-intro {
+  padding-top: 3.75rem;
+  padding-bottom: 3.75rem;
+}
+
+.termos {
+  font-weight: 600;
+  line-height: 1.33;
+}
+
+.termos h2 {
+  padding-bottom: 1rem;
+}
+
+.termos li:nth-child(2) h2,
+.termos li:nth-child(3) h2 {
+  padding-top: 2rem;
+}
+.termos > li:first-child {
+  padding-top: 7.5rem;
+}
+
+.termos > li:last-child {
+  padding-bottom: 7.5rem;
+}
+
+.condicoes li + li {
+  padding-top: 1rem;
+}
+
+.condicoes li {
+  max-width: 90ch;
+}
+
+@media (max-width: 800px) {
+  .termos-intro {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  .termos > li:first-child {
+    padding-top: 3.75rem;
+  }
+
+  .termos > li:last-child {
+    padding-bottom: 3.75rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .termos > li:first-child {
+    padding-top: 2rem;
+  }
+
+  .termos > li:last-child {
+    padding-bottom: 2rem;
+  }
+}

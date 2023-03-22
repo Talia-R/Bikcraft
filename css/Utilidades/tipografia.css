@@ -3,6 +3,13 @@
   --tg2: "Roboto", sans-serif;
 }
 
+h1 {
+  font-family: var(--tg1);
+  font-size: 4rem;
+  font-weight: 600;
+  line-height: 1.125;
+}
+
 .font-1-xxl {
   font-family: var(--tg1);
   font-size: 4rem;
@@ -91,10 +98,12 @@
 
 /* ======= responsivo ======= */
 
-@media (max-width: 1200px) {
+@media (max-width: 800px) {
+  h1,
   .font-1-xxl {
     font-size: 3rem;
   }
+  .font-1-l,
   .font-2-l,
   .font-2-l-b {
     font-size: 1.125rem;
@@ -112,6 +121,7 @@
 }
 
 @media (max-width: 500px) {
+  h1,
   .font-1-xxl {
     font-size: 2rem;
   }

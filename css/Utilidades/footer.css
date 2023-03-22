@@ -15,6 +15,10 @@
   grid-row: 1;
 }
 
+.footer-contato a:hover {
+  color: var(--c2);
+}
+
 .footer-contato p {
   padding-bottom: 2rem;
 }
