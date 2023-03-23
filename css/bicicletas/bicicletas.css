@@ -1,0 +1,173 @@
+#bicicletas h2::after {
+  content: "";
+}
+
+.bicicletas {
+  padding-top: 7.5rem;
+  padding-bottom: 7.5rem;
+}
+
+.bicicletas h2 {
+  position: relative;
+  margin-bottom: 1.25rem;
+}
+
+.bicicletas h2::before {
+  content: "";
+  display: block;
+  background-color: var(--p1);
+  width: 12px;
+  height: 8px;
+  margin-bottom: 0.5rem;
+}
+
+.bicicletas p {
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+.bicicletas ul {
+  font-weight: 500;
+}
+
+.bicicletas li + li {
+  margin-top: 1rem;
+}
+
+.bicicletas > div + div {
+  margin-top: 3.75rem;
+}
+
+.nimbus,
+.magic,
+.nebula {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: start;
+  gap: 2rem;
+}
+
+.magic-bg {
+  background: linear-gradient(to right, var(--c0) 15%, var(--c11) 15%);
+}
+
+.magic {
+  padding-top: 3.75rem;
+  padding-bottom: 3.75rem;
+}
+
+.imagem-nimbus,
+.imagem-magic,
+.imagem-nebula {
+  position: relative;
+}
+
+.imagem-nimbus img,
+.imagem-magic img,
+.imagem-nebula img {
+  object-position: center;
+}
+
+.imagem-nimbus span,
+.imagem-magic span,
+.imagem-nebula span {
+  position: absolute;
+  top: 1.25rem;
+  right: 0rem;
+  display: inline-block;
+  padding: 8px;
+  background-color: black;
+  border-radius: 0.3125rem 0 0 0.3125rem;
+}
+
+.texto-nimbus div,
+.texto-magic div,
+.texto-nebula div {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.texto-nimbus ul li::before,
+.texto-magic ul li::before,
+.texto-nebula ul li::before {
+  content: "";
+  display: inline-block;
+  background: no-repeat;
+  width: 24px;
+  height: 24px;
+  margin-right: 0.5rem;
+  /* position: absolute; */
+}
+
+.texto-nimbus ul li:first-child:before,
+.texto-magic ul li:first-child:before,
+.texto-nebula ul li:first-child:before {
+  background: url(/assets/icones/eletrica.svg);
+}
+
+.texto-nimbus ul li:nth-child(2):before,
+.texto-magic ul li:nth-child(2):before,
+.texto-nebula ul li:nth-child(2):before {
+  background: url(/assets/icones/carbono.svg);
+}
+
+.texto-nimbus ul li:nth-child(3):before,
+.texto-magic ul li:nth-child(3):before,
+.texto-nebula ul li:nth-child(3):before {
+  background: url(/assets/icones/velocidade.svg);
+}
+
+.texto-nimbus ul li:last-child:before,
+.texto-magic ul li:last-child:before,
+.texto-nebula ul li:last-child:before {
+  background: url(/assets/icones/rastreador.svg);
+}
+
+@media (max-width: 800px) {
+  .bicicletas {
+    padding-top: 3.75rem;
+    padding-bottom: 3.75rem;
+  }
+  .nimbus,
+  .magic,
+  .nebula {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .magic-bg {
+    background: linear-gradient(to bottom, var(--c0) 30%, var(--c11) 30%);
+  }
+  .magic {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+}
+
+@media (max-width: 350px) {
+  .bicicletas {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .bicicletas p {
+    margin-bottom: 1rem;
+  }
+  .magic-bg {
+    background: var(--c11);
+  }
+  .imagem-nimbus,
+  .imagem-magic,
+  .imagem-nebula {
+    display: none;
+  }
+  .texto-nimbus div,
+  .texto-magic div,
+  .texto-nebula div {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  .bicicletas > div + div {
+    margin-top: 1rem;
+  }
+}

@@ -37,10 +37,44 @@
   background: var(--c9);
 }
 
+.botao.seta {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.botao.seta::after {
+  content: "";
+  background: url(../../assets/icones/seta.svg);
+  width: 18px;
+  height: 10px;
+  display: inline-block;
+  color: currentColor;
+  transition: 0.3s;
+}
+.botao.seta:hover::after {
+  transform: translateX(9px);
+}
+
 h1::after,
 h2::after {
   content: ".";
   color: var(--p1);
+}
+
+.titulo-bg {
+  background-color: var(--c11);
+  padding-top: 3.75rem;
+  padding-bottom: 3.75rem;
+}
+.titulo-bg span {
+  padding-bottom: 0.5rem;
+}
+
+@media (max-width: 800px) {
+  .titulo-bg {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
 }
 
 @media (max-width: 500px) {
@@ -50,5 +84,11 @@ h2::after {
   }
   .botao:hover {
     background: var(--gradi);
+  }
+  .botao.seta {
+    gap: 0.5rem;
+  }
+  .botao.seta:hover::after {
+    transform: translateX(4px);
   }
 }

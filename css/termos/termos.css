@@ -1,14 +1,5 @@
-.termos-bg {
-  background-color: var(--c11);
-}
-
 .termos h2::after {
   content: "";
-}
-
-.termos-intro {
-  padding-top: 3.75rem;
-  padding-bottom: 3.75rem;
 }
 
 .termos {
@@ -41,10 +32,6 @@
 }
 
 @media (max-width: 800px) {
-  .termos-intro {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-  }
   .termos > li:first-child {
     padding-top: 3.75rem;
   }
