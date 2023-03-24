@@ -1,3 +1,12 @@
+body {
+  --padding: 7.5rem;
+}
+@media (max-width: 800px) {
+  body {
+    --padding: 3.75rem;
+  }
+}
+
 /* ========== css reset ========== */
 
 * {
@@ -23,7 +32,9 @@ a,
 ul,
 li,
 span,
-blockquote {
+blockquote,
+dd,
+dl {
   margin: 0;
   padding: 0;
 }

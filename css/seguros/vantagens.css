@@ -1,0 +1,71 @@
+#seguros .seguros {
+  padding-top: 1rem;
+}
+
+.vantagens-bg {
+  background-color: var(--c12);
+  padding-top: var(--padding);
+  padding-bottom: var(--padding);
+}
+
+.vantagens h2 {
+  margin-bottom: 5.75rem;
+}
+
+.vantagens-lista {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, max-content));
+  gap: 3.5rem 2.5rem;
+}
+
+.vantagens h3 {
+  font-family: var(--tg1);
+  font-weight: 600;
+  font-size: 1.5;
+  line-height: 2;
+  color: var(--c0);
+  position: relative;
+}
+
+.vantagens h3::before {
+  content: "";
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  top: -2rem;
+}
+
+.vantagens ul li:nth-child(1) h3::before {
+  background: url(../../assets/icones/eletrica.svg);
+}
+
+.vantagens ul li:nth-child(2) h3::before {
+  background: url(../../assets/icones/carbono.svg) no-repeat;
+}
+
+.vantagens ul li:nth-child(3) h3::before {
+  background: url(../../assets/icones/sustentavel.svg);
+}
+
+.vantagens ul li:nth-child(4) h3::before {
+  background: url(../../assets/icones/rastreador.svg);
+}
+
+.vantagens ul li:nth-child(5) h3::before {
+  background: url(../../assets/icones/seguro.svg);
+}
+
+.vantagens ul li:nth-child(6) h3::before {
+  background: url(../../assets/icones/velocidade.svg) no-repeat;
+}
+
+.vantagens p {
+  font-weight: 400;
+}
+
+@media (max-width: 800px) {
+  .vantagens h2 {
+    margin-bottom: 4rem;
+  }
+}
