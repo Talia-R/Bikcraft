@@ -111,7 +111,9 @@ h1 {
 }
 
 @media (max-width: 600px) {
-  .font-1-m {
+  .font-1-m,
+  .font-1-m-b,
+  .font-2-m {
     font-size: 0.875rem;
   }
   .font-1-xl,
