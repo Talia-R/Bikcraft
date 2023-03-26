@@ -1,9 +1,14 @@
 body {
-  --padding: 7.5rem;
+  --padding-120: 7.5rem;
 }
 @media (max-width: 800px) {
   body {
-    --padding: 3.75rem;
+    --padding-120: 3.75rem;
+  }
+}
+@media (max-width: 500px) {
+  body {
+    --padding-120: 2rem;
   }
 }
 

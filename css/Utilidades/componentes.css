@@ -84,16 +84,21 @@ h2::after {
 
 .titulo-bg {
   background-color: var(--c11);
-  padding-top: 3.75rem;
-  padding-bottom: 3.75rem;
+  padding-top: var(--padding-120);
+  padding-bottom: var(--padding-120);
 }
-.titulo-bg span {
+.titulo-bg h1 {
   padding-bottom: 0.5rem;
+  margin-bottom: var(--padding-120);
 }
 
 @media (max-width: 800px) {
   .titulo-bg {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-top: var(--padding-120);
+    padding-bottom: var(--padding-120);
+  }
+  .titulo-bg h1 {
+    padding-bottom: 0.5rem;
+    margin-bottom: var(--padding-120);
   }
 }

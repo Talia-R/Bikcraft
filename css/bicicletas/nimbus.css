@@ -1,0 +1,174 @@
+#nimbus .container-secundario {
+  gap: 2.5rem;
+}
+
+#nimbus h2::after {
+  content: "";
+}
+
+.bicicletas-grid {
+  align-items: start;
+  justify-items: start;
+}
+
+.bicicletas-imagens {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+  justify-content: space-between;
+}
+
+.bicicletas-imagens img:nth-child(1) {
+  grid-column: 1 / -1;
+  /* max-width: 560px; */
+  /* max-height: 440px; */
+}
+
+/* .bicicletas-texto h2 {
+  margin-bottom: 3.75rem;
+} */
+
+.bicicletas-texto > p {
+  margin-bottom: 2rem;
+}
+
+.bicicletas-disponibilidade {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 2.5rem;
+}
+
+.bicicletas-disponibilidade a {
+  align-self: flex-start;
+}
+
+.bicicletas-disponibilidade-extra {
+  display: flex;
+  gap: 0.5rem;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.bicicletas-disponibilidade-extra span {
+  background-color: var(--c12);
+  border-radius: 0.3125rem;
+  padding: 0.25rem 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.bicicletas-disponibilidade-extra span::before {
+  content: "";
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.5rem;
+}
+.bicicletas-disponibilidade-extra span:first-child:before {
+  background: url(../../assets/icones/entrega.svg);
+}
+.bicicletas-disponibilidade-extra span:last-child:before {
+  background: url(../../assets/icones/estoque.svg);
+}
+
+.bicicletas-texto span,
+.bicicletas-texto h2 {
+  font-weight: 500;
+}
+
+.bicicletas-texto h2 {
+  margin-bottom: 0.75rem;
+}
+
+.bicicletas-informacoes {
+  margin-bottom: 2.5rem;
+  display: grid;
+  gap: 2rem 0;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.bicicletas-informacoes,
+.bicicletas-ficha {
+  background-color: var(--c12);
+  padding: 2rem;
+  border-radius: 0.3125rem;
+}
+
+.bicicletas-ficha li {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.bicicletas-ficha li + li::after {
+  content: "";
+  display: inline-block;
+  background-color: var(--c11);
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  top: 6px;
+}
+
+.bicicletas-ficha li + li {
+  padding-top: 12px;
+}
+
+.bicicletas-informacoes h3::before {
+  content: "";
+  display: block;
+  margin-bottom: 4px;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.bicicletas-informacoes li:first-child h3::before {
+  background: url(../../assets/icones/eletrica-home.svg);
+}
+
+.bicicletas-informacoes li:nth-child(2) h3::before {
+  background: url(../../assets/icones/velocidade.svg);
+}
+
+.bicicletas-informacoes li:nth-child(3) h3::before {
+  background: url(../../assets/icones/rastreador-home.svg);
+}
+
+.bicicletas-informacoes li:last-child h3::before {
+  background: url(../../assets/icones/carbono.svg) no-repeat;
+}
+
+.bicicletas-informacoes li:nth-child(even) {
+  padding-left: 0.5rem;
+}
+
+.bicicletas-informacoes h3 {
+  color: var(--c0);
+  font-family: var(--tg1);
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 1.33;
+}
+
+.bicicletas-informacoes p {
+  /* max-width: 25ch; */
+}
+
+.bicicletas-texto :nth-child(6) span {
+  color: var(--c6);
+}
+
+@media (max-width: 1010px) {
+  .bicicletas-informacoes li:nth-child(even) {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 800px) {
+  .bicicletas-grid {
+    grid-template-columns: 1fr;
+  }
+}

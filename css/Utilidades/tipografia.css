@@ -17,6 +17,13 @@ h1 {
   line-height: 1.125;
 }
 
+.font-2-xl {
+  font-family: var(--tg2);
+  font-size: 2.25rem;
+  font-weight: 500;
+  line-height: 1.33;
+}
+
 .font-1-xl {
   font-family: var(--tg1);
   font-size: 2rem;

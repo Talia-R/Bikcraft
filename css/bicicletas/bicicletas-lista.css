@@ -49,3 +49,12 @@
     margin-bottom: 2rem;
   }
 }
+
+#nimbus .bicicletas-lista-itens {
+  padding: 0 0 1rem 0;
+  gap: 2.5rem;
+}
+
+#nimbus .bicicletas-lista-itens img {
+  object-position: center;
+}

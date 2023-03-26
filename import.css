@@ -18,11 +18,13 @@
 /* ====== bibicletas ======  */
 @import url(./css/bicicletas/bicicletas-lista.css);
 @import url(./css/bicicletas/bicicletas.css);
+@import url(./css/bicicletas/nimbus.css);
 
 /* ====== seguros ======  */
 @import url(./css/seguros/seguros.css);
 @import url(./css/seguros/vantagens.css);
 @import url(./css/seguros/perguntas.css);
+@import url(./css/seguros/depoimento-seguro.css);
 
 /* ====== termos ======  */
 @import url(./css/termos/termos.css);
