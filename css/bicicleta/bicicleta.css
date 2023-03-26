@@ -1,14 +1,15 @@
-#nimbus .container-secundario {
+#bicicleta .container-secundario {
   gap: 2.5rem;
 }
 
-#nimbus h2::after {
+#bicicleta h2::after {
   content: "";
 }
 
 .bicicletas-grid {
   align-items: start;
   justify-items: start;
+  padding-top: var(--padding-60);
 }
 
 .bicicletas-imagens {
@@ -23,10 +24,6 @@
   /* max-width: 560px; */
   /* max-height: 440px; */
 }
-
-/* .bicicletas-texto h2 {
-  margin-bottom: 3.75rem;
-} */
 
 .bicicletas-texto > p {
   margin-bottom: 2rem;
@@ -151,10 +148,6 @@
   font-weight: 500;
   font-size: 1.125rem;
   line-height: 1.33;
-}
-
-.bicicletas-informacoes p {
-  /* max-width: 25ch; */
 }
 
 .bicicletas-texto :nth-child(6) span {

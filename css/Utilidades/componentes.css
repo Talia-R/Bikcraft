@@ -10,6 +10,37 @@
   grid-template-columns: 1fr 1fr;
   gap: 5rem;
 }
+/* ==================  padding  ================== */
+/* ==================  background ================== */
+.bg11-p120 {
+  background-color: var(--c11);
+  padding-top: var(--padding-120);
+  padding-bottom: var(--padding-120);
+}
+
+.bg11-p60 {
+  background-color: var(--c11);
+  padding-top: var(--padding-60);
+  padding-bottom: var(--padding-60);
+}
+
+.bg11-p120 h1,
+.bg11-p60 h1 {
+  padding-top: 0.5rem;
+}
+
+@media (max-width: 800px) {
+  .titulo-bg {
+    padding-top: var(--padding-120);
+    padding-bottom: var(--padding-120);
+  }
+  .titulo-bg h1 {
+    padding-bottom: 0.5rem;
+    margin-bottom: var(--padding-120);
+  }
+}
+
+/* ==================  botão ================== */
 
 .botao {
   display: inline-block;
@@ -73,32 +104,5 @@
   .botao.seta {
     font-size: 0.875rem;
     /* padding: 0.5rem; */
-  }
-}
-
-h1::after,
-h2::after {
-  content: ".";
-  color: var(--p1);
-}
-
-.titulo-bg {
-  background-color: var(--c11);
-  padding-top: var(--padding-120);
-  padding-bottom: var(--padding-120);
-}
-.titulo-bg h1 {
-  padding-bottom: 0.5rem;
-  margin-bottom: var(--padding-120);
-}
-
-@media (max-width: 800px) {
-  .titulo-bg {
-    padding-top: var(--padding-120);
-    padding-bottom: var(--padding-120);
-  }
-  .titulo-bg h1 {
-    padding-bottom: 0.5rem;
-    margin-bottom: var(--padding-120);
   }
 }

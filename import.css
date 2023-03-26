@@ -8,6 +8,7 @@
 @import url(./css/utilidades/tipografia.css);
 @import url(./css/utilidades/nav.css);
 @import url(./css/utilidades/footer.css);
+@import url(./css/utilidades/formulario.css);
 
 /* ====== home ======  */
 @import url(./css/home/introducao.css);
@@ -18,13 +19,20 @@
 /* ====== bibicletas ======  */
 @import url(./css/bicicletas/bicicletas-lista.css);
 @import url(./css/bicicletas/bicicletas.css);
-@import url(./css/bicicletas/nimbus.css);
+
+/* ====== bibicleta ======  */
+@import url(./css/bicicleta/bicicleta.css);
+@import url(./css/bicicleta/depoimento-seguro.css);
 
 /* ====== seguros ======  */
 @import url(./css/seguros/seguros.css);
 @import url(./css/seguros/vantagens.css);
 @import url(./css/seguros/perguntas.css);
 @import url(./css/seguros/depoimento-seguro.css);
+
+/* ====== contato ======  */
+@import url(./css/contato/contato.css);
+@import url(./css/contato/lojas.css);
 
 /* ====== termos ======  */
 @import url(./css/termos/termos.css);

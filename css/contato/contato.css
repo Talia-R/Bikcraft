@@ -1,0 +1,116 @@
+#contato .bg11-p60 {
+  background-color: inherit;
+}
+
+#contato {
+  background-color: var(--c1);
+  background: linear-gradient(var(--c11) 570px, var(--c1) 570px);
+}
+
+.contato {
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+  margin-top: var(--padding-60);
+}
+
+.contato-dados,
+.contato-formulario {
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+  padding: 3.75rem;
+}
+
+.contato-dados {
+  display: grid;
+  justify-items: start;
+  border-radius: 0.3125rem 0 0 0.3125rem;
+  background-color: var(--c12);
+  align-items: start;
+}
+
+.contato-dados h2 {
+  font-weight: 600;
+  line-height: 1.5;
+  padding-bottom: var(--padding-60);
+}
+
+.contato-dados ul,
+.contato-dados address {
+  line-height: 1.5;
+}
+
+.contato-dados .contato-endereco {
+  padding-bottom: var(--padding-60);
+}
+
+.contato-dados .contato-email {
+  margin-bottom: var(--padding-60);
+}
+.contato-dados .contato-email a {
+  display: block;
+  max-width: max-content;
+}
+.contato-dados .contato-email a:hover {
+  color: var(--c0);
+}
+.contato-dados .contato-email a:nth-child(2) {
+  margin-bottom: 2rem;
+}
+
+.contato-dados .contato-redes {
+  display: flex;
+  gap: 2rem;
+}
+
+.contato-endereco li:first-child,
+.contato-email a:nth-child(1),
+.contato-email a:nth-child(3) {
+  position: relative;
+}
+
+.contato-endereco li:first-child::before,
+.contato-email a:nth-child(1)::before,
+.contato-email a:nth-child(3)::before {
+  content: "";
+  display: inline-block;
+  width: 1.25rem;
+  height: 1.25rem;
+  position: absolute;
+  left: -1.75rem;
+}
+
+.contato-endereco li:first-child::before {
+  background: url(../../assets/icones/local.svg);
+}
+
+.contato-email a:nth-child(1)::before {
+  background: url(../../assets/icones/email.svg);
+}
+.contato-email a:nth-child(3)::before {
+  background: url(../../assets/icones/telefone.svg);
+}
+
+@media (max-width: 800px) {
+  .contato {
+    grid-template-columns: 1fr;
+    padding: 1.25rem;
+  }
+  .contato-dados,
+  .contato-formulario {
+    padding: 1.25rem;
+  }
+  .contato-dados {
+    border-radius: 0.3125rem 0.3125rem 0 0;
+  }
+  .contato-formulario {
+    border-radius: 0 0 0.3125rem 0.3125rem;
+  }
+  .contato-endereco li,
+  .contato-email a {
+    margin-left: 1rem;
+  }
+  .contato-endereco li:first-child::before,
+  .contato-email a:nth-child(1)::before,
+  .contato-email a:nth-child(3)::before {
+    left: -1.5rem;
+  }
+}

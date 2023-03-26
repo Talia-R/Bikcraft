@@ -96,6 +96,13 @@ h1 {
   line-height: 1.428;
 }
 
+.font-1-xs-m {
+  font-family: var(--tg1);
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 2;
+}
+
 .font-1-xs {
   font-family: var(--tg1);
   font-size: 0.75rem;

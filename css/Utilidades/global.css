@@ -1,9 +1,11 @@
 body {
   --padding-120: 7.5rem;
+  --padding-60: 3.75rem;
 }
 @media (max-width: 800px) {
   body {
     --padding-120: 3.75rem;
+    --padding-60: 2rem;
   }
 }
 @media (max-width: 500px) {
@@ -12,6 +14,11 @@ body {
   }
 }
 
+h1::after,
+h2::after {
+  content: ".";
+  color: var(--p1);
+}
 /* ========== css reset ========== */
 
 * {
@@ -23,6 +30,10 @@ body {
 }
 svg {
   max-width: 100%;
+}
+
+address {
+  font-style: normal;
 }
 
 body,
@@ -53,6 +64,7 @@ ul {
 a {
   text-decoration: none;
   color: inherit;
+  display: block;
 }
 
 img {
@@ -69,4 +81,13 @@ img[src$=".jpg"] {
 
 span {
   display: block;
+}
+
+label {
+  display: block;
+}
+
+button {
+  border-width: 0;
+  cursor: pointer;
 }

@@ -4,8 +4,8 @@
 
 .vantagens-bg {
   background-color: var(--c12);
-  padding-top: var(--padding);
-  padding-bottom: var(--padding);
+  padding-top: var(--padding-60);
+  padding-bottom: var(--padding-60);
 }
 
 .vantagens h2 {
