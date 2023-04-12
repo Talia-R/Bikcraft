@@ -35,7 +35,8 @@
   left: 0;
 }
 
-.navegacao-primaria a:hover::after {
+.navegacao-primaria a:hover::after,
+.navegacao-primaria a.ativo::after {
   width: 100%;
 }
 

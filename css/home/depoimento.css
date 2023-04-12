@@ -46,6 +46,12 @@
   min-width: 390px;
 }
 
+@media (max-width: 1200px) {
+  .depoimento-imagem img {
+    max-height: 520px;
+  }
+}
+
 @media (max-width: 1000px) {
   .depoimento-imagem img {
     object-position: center;
